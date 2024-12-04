@@ -5,7 +5,6 @@ import { Navbar, Nav, NavDropdown, Button  } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import LoginPage from '../login/LoginPage';
 import RegisterPage from '../registro/RegisterPage';
-// import { useAuth } from '../api/AuthContext';
 
 function Bnadvar() {
 

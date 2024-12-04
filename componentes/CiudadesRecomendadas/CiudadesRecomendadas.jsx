@@ -70,7 +70,6 @@ function Cartas() {
 
   const handleClick = (className) => {
       setDisabled(true);
-      // enabled=true;
       setActivador(false);
       const rr=document.getElementsByClassName(className);
       () => setCount((count) => count+45)
@@ -83,13 +82,6 @@ function Cartas() {
     const rr=document.getElementsByClassName(className);
     () => setCount((count) => count+45)
   };
-  
-  // const desactiv = (className) => {
-  //   () => setCount((count) => count+45)
-  //   const rr=document.getElementsByClassName(className);
-  //   rr.disabled;
-  //   className.disabled;
-  // };
   
   return (
     <>

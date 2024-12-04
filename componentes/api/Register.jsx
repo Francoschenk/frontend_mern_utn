@@ -18,7 +18,7 @@ const Register = () => {
   };
  
   const handleGoToLogin = () => {
-    navigate('/Logearse'); // Redirige a la página de login
+    navigate('/Logearse'); 
   };
 
   return (
