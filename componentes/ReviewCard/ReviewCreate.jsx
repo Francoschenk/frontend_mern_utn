@@ -25,7 +25,7 @@ const AddReviewPage = () => {
   
     try {
       const response = await axios.post(
-        'http://localhost:3200/api/review',
+        'https://backtpfinalutn.onrender.com/api/review',
         payload,
         {
           headers: {
