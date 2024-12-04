@@ -1,0 +1,112 @@
+/* Estilo principal del formulario */
+.add-review-page {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1), -4px -4px 8px rgba(255, 255, 255, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add-review-page:hover {
+  transform: translateY(-5px);
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.15), -6px -6px 12px rgba(255, 255, 255, 0.7);
+}
+
+/* aclaración */
+
+.logeado {
+  font-size: 18px;
+  color: #333; 
+  background-color: #f9f9f9; 
+  padding: 10px; 
+  border: 1px solid #ddd; 
+  border-radius: 5px; 
+  text-align: center; 
+  margin: 20px auto; 
+  max-width: 400px; 
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+/* Título del formulario */
+.add-review-page h2 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.add-review-page h2:hover {
+  color: #007bff;
+}
+
+/* Estilo para los campos de entrada */
+.add-review-page input,
+.add-review-page textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.05);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Estilo para el área de texto (textarea) */
+.add-review-page textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Efecto de enfoque para los campos de entrada */
+.add-review-page input:focus,
+.add-review-page textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
+  background-color: #ffffff;
+}
+
+/* Botón de envío */
+.add-review-page button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(145deg, #007bff, #0056b3);
+  border: none;
+  border-radius: 6px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1), -2px -2px 5px rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+/* Efecto del botón al pasar el mouse */
+.add-review-page button:hover {
+  background: linear-gradient(145deg, #0056b3, #003f7f);
+  transform: scale(1.05);
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 480px) {
+  .add-review-page {
+    padding: 15px;
+    margin: 30px auto;
+  }
+
+  .add-review-page h2 {
+    font-size: 22px;
+  }
+
+  .add-review-page button {
+    padding: 10px;
+  }
+}
+  

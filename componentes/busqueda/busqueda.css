@@ -1,0 +1,34 @@
+/* Estilos generales para el componente Card */
+.card {
+    max-width: 500px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    padding: 20px; 
+    justify-content: center;
+    margin: 2%;
+    
+  }
+  .containercarta {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 5%;  
+    width: 100%;      
+}
+
+  
+  /* Estilos para dispositivos con un ancho máximo de 940px */
+  @media (max-width: 940px) {
+    .carta {
+      width: 90%;
+      padding: 15px; 
+    }
+  }
+  
+  /* Estilos para dispositivos con un ancho máximo de 648px */
+  @media (max-width: 648px) {
+    .carta {
+      width: 95%; 
+      padding: 10px; 
+    }
+  }

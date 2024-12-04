@@ -1,0 +1,88 @@
+.cartas{
+  display: grid;
+  grid-template-areas:
+  "header header header"
+  "cartas1 cartas2 cartas3"
+  "cartas3 cartas4"
+  "cartas5 cartas6"
+  "footer footer footer";
+  grid-template-rows: 1fr ;  
+  grid-template-columns: 1fr  ; 
+  width: 100%;
+  padding: 1rem;
+  gap: 10px;
+}
+.mb-3{
+background-color: chocolate;
+color: cadetblue;
+}
+.separar{
+margin: 1%;
+background-color: blueviolet;
+color: deeppink;
+}
+
+.cartas1{
+background-color: rgb(144, 177, 241);
+border-color: black;
+border-width: 1px;
+}
+.cartas2{
+background-color: rgb(144, 177, 241);
+border-color: black;
+border-width: 1px;
+}.cartas3{
+background-color: rgb(144, 177, 241);
+border-color: black;
+border-width: 1px;
+}
+.cartas4{
+background-color: rgb(144, 177, 241);
+border-color: black;
+border-width: 1px;
+}.cartas5{
+background-color: rgb(144, 177, 241);
+border-color: black;
+border-width: 1px;
+}.cartas6{
+background-color: rgb(144, 177, 241);
+border-color: black;
+border-width: 1px;
+}
+/*tablet*/
+@media(min-width: 658px){
+  #root{
+ 
+  background-color: rgb(192, 197, 207); 
+  width: 200vh;
+  row-gap: 10px;
+  column-gap: 1rem;
+  text-align: center; 
+  }
+  .cartas{
+      width: max;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      border: 10px black;
+  }
+  header {
+    grid-area: header;
+  }
+}
+
+/*escritorio*/
+@media(min-width: 940px){
+  #root{
+    width: 200vh;
+  }
+  
+
+  .cartas{
+      width: max;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr  1fr;
+  }
+  header {
+      grid-area: header;
+    }
+} 

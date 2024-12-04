@@ -1,0 +1,90 @@
+/* Estilo general del cuerpo */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgba(240, 240, 240, 1);
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo del contenedor principal */
+.container {
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgb(142, 193, 235);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+/* Cuadrícula de tarjetas utilizando flexbox */
+.card-grid {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 20px;
+  justify-content: center; 
+  padding: 20px 0;
+}
+
+/* Estilo de cada tarjeta */
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  flex: 1 1 calc(33% - 20px); 
+  box-sizing: border-box; 
+}
+
+/* Efecto al pasar el mouse por encima de la tarjeta */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo del título dentro de la tarjeta */
+.card h3 {
+  margin: 0;
+  font-size: 1.6rem;
+  color: #333;
+}
+
+/* Estilo del texto dentro de la tarjeta */
+.card p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Media query para pantallas medianas (tabletas) */
+@media screen and (max-width: 940px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .card-grid {
+    justify-content: flex-start; 
+  }
+
+  .card {
+    flex: 1 1 calc(50% - 20px); 
+  }
+}
+
+/* Media query para pantallas pequeñas (móviles) */
+@media screen and (max-width: 658px) {
+  .container {
+    max-width: 100%;
+    padding: 10px;
+  }
+  .card-grid {
+    flex-direction: column; 
+    justify-content: center; 
+  }
+  .card {
+    flex: 1 1 100%;
+  }
+}
+

@@ -1,0 +1,65 @@
+  /* Media query para pantallas con un ancho máximo de 648px */
+  @media (max-width: 648px) 
+    .form-label {
+      font-size: 0.8rem;
+      margin-bottom: 0.4rem;
+      justify-content: center;
+    }
+  
+    .form-control {
+      padding: .25rem .5rem;
+      font-size: 0.9rem;
+    }
+  
+    .form-group {
+      padding-bottom: 1rem; 
+    }
+
+    .mb-3{
+        width: 24rem;
+    display: inline-block;
+    background-color: transparent !important;
+ }
+  
+/* Media query para pantallas con un ancho máximo de 940px */
+  @media (min-width: 649px) and (max-width: 940px) {
+    .form-label {
+      font-size: 0.9rem;
+    }
+  
+    .form-control {
+      padding: .3rem .6rem;
+    }
+  
+    .form-group {
+      padding-bottom: 1.5rem; 
+    }
+    .mb-3{
+        width: 34rem;
+        display: inline-block;
+        background-color: transparent !important;
+  }
+  }
+
+  /* Estilos por defecto para pantallas grandes */
+@media (min-width: 941px) {
+    .form-group {
+        padding-bottom: 2rem; 
+        font-weight: bold;
+      }
+      .form-label {
+        font-size: 1rem;
+        margin-bottom: .5rem;
+      }
+      .form-control {
+        padding: .375rem .75rem;
+        font-size: 1rem;
+      }
+    .mb-3{
+    width: 57rem;
+    display: inline-block;
+    background-color: transparent !important;
+    }
+}
+
+  

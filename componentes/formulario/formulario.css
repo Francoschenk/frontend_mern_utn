@@ -1,0 +1,216 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f9fa;
+  }
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+  }
+  
+  /* Estilos básicos para los Botones */
+  .boton {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .boton:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+
+  .boleto{
+    background-color: palevioletred !important;
+    color: white;
+  }
+  
+  .Botonsuma {
+    background-color: #28a745;
+    color: white;
+    margin-top: 2%;
+  }
+  
+  .Botonsuma:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+  }
+  
+  p {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .modal-header {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .modal-body {
+    font-size: 16px;
+  }
+  
+  .modal-footer {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .modal-footer .btn {
+    margin-left: 10px;
+  }
+  
+  /* Estilos para pantallas hasta 648px */
+  @media (max-width: 648px) {
+    body {
+      background-color: #e9ecef;
+    }
+    .derecha{
+        margin-right: 1%;
+        margin-bottom: 2%;
+    }
+    .container {
+      width: 95%;
+      background-color: #ffffff;
+      border: 1px solid #dee2e6;
+      border-radius: 8px;
+    }
+  
+    button {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  
+    .boton {
+      background-color: #dc3545; 
+    }
+  
+    .boton:hover {
+      background-color: #c82333;
+    }
+    
+    .Botonsuma {
+      background-color: #17a2b8; 
+      margin-left: 1%;
+    }
+  
+    .Botonsuma:hover {
+      background-color: #138496;
+    }
+  
+    p {
+      font-size: 16px;
+    }
+  
+    .modal-dialog {
+      max-width: 90%;
+    }
+  }
+  
+  /* Estilos para pantallas entre 649px y 940px */
+  @media (min-width: 649px) and (max-width: 940px) {
+    body {
+      background-color: #f1f3f5;
+    }
+    .derecha{
+        margin-right: 1%;
+    }
+    .container {
+      width: 90%;
+      background-color: #ffffff;
+      border: 1px solid #ced4da;
+      border-radius: 8px;
+    }
+  
+    button {
+      padding: 12px 24px;
+      font-size: 16px;
+    }
+  
+    .boton {
+      background-color:blueviolet; 
+    }
+  
+    .boton:hover {
+      background-color: #0056b3;
+    }
+  
+    .Botonsuma {
+      background-color: #28a745; 
+      margin-left: 1%;
+    }
+  
+    .Botonsuma:hover {
+      background-color: #218838;
+    }
+  
+    p {
+      font-size: 18px;
+    }
+  
+    .modal-dialog {
+      max-width: 80%;
+    }
+  }
+  
+  /* Estilos para pantallas mayores a 941px */
+  @media (min-width: 941px) {
+    body {
+      background-color: #ffffff;
+    } 
+    .derecha{
+    margin-right: 1%;
+    }
+    .container {
+      width: 85%;
+      background-color: #f8f9fa;
+      border: none;
+    }
+  
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+    }
+  
+    .boton {
+      background-color: #343a40; 
+    }
+  
+    .boton:hover {
+      background-color: #23272b;
+    }
+  
+    .Botonsuma {
+      background-color: #17a2b8; 
+      margin-left: 1%;
+    }
+  
+    .Botonsuma:hover {
+      background-color: #117a8b;
+    }
+    p {
+      font-size: 20px;
+    }
+  
+    .modal-dialog {
+      max-width: 60%;
+    }
+  }

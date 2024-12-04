@@ -1,0 +1,40 @@
+.container{
+  background-color: transparent;
+  justify-content: space-evenly; 
+  border-color: none;
+  width: 200;
+}
+.row{
+  justify-content: center;
+}
+.imagenesNosotros{
+ align-content: center;
+ width: 200vh;
+ justify-content: space-evenly;
+
+}
+.about-us {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 200vh;
+
+}
+.container{
+  border: none;
+}
+.conocenos{
+  padding: 2px;
+  text-align: center;
+  grid-area: header;
+}
+
+.about-us-content {
+  margin: 20px 0;
+  grid-area: publicidad;
+}
+
+.about-us-footer {
+  background-color: #f4f4f4;
+  padding: 10px;
+  text-align: center;
+}
